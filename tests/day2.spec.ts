@@ -17,5 +17,5 @@ await page.locator('[data-qa="login-password"]').fill('chari123');
     await expect(page).toHaveURL('/login');
     await expect (page.getByText('Login to your account')).toBeVisible();
 
-
+  await page.pause();
 });
